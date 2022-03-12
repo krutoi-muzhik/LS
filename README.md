@@ -9,7 +9,7 @@ Here is a C realisation of a bash func "ls", that currently support flags:
  Realisation:
  First of all the file is opened with flags "O_RDONLY | O_DIRECTORY"
  
- info about file, such as inode, type is got from struct "linux_dirent64" using func "getdents64"
+ info about file, such as inode and its type is got from struct "linux_dirent64" using func "getdents64"
  
  file size and permissions for user are known using "stat"
  
