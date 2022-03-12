@@ -15,8 +15,9 @@ Here is a C realisation of a bash func "ls", that currently support flags:
  
  info about the user, owner of file is got from struct "passwd" using func "getpwuid"
  
- 
- 
+ To run use "make ls" and "./ls dir -flag" (You can combine flags together)
+
+
  
 In later updates i am going to add more flags
 
