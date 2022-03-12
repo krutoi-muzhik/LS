@@ -1,4 +1,4 @@
-#Here is a C realisation of a bash func "ls", that currently support flags:
+# Here is a C realisation of a bash func "ls", that currently support flags:
 | flag| description                            |
 |-----|----------------------------------------|
 |  -R | list subdirectories recursively        |
@@ -6,7 +6,7 @@
 |  -l | use long listing format                |
 |  -i | print the index number of each file    |
  
- #Realisation:
+# Realisation:
  First of all the file is opened with flags "O_RDONLY | O_DIRECTORY"
  
  info about file, such as inode and its type is got from struct "linux_dirent64" using func "getdents64"
@@ -15,13 +15,13 @@
  
  info about the user, owner of file is got from struct "passwd" using func "getpwuid"
  
- #Run:
+# Run:
  To run use "make ls" and "./ls dir -flag" 
- #####(You can combine flags together)
+##### (You can combine flags together)
 
 
-#Verson:
+# Verson:
   lags in -R are fixed
   
-##Plan:
+## Plan:
 In later updates i am going to add more flags
