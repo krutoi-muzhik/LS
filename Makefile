@@ -1,2 +1,11 @@
-ls: main.c ls.c
-	gcc main.c ls.c -o ls
+TARGET = ls
+CC = gcc
+
+$(TARGET): main.o ls.o
+	$(CC) main.o ls.o -o $(TARGET)
+
+%.o: %.c
+	$(CC) -c $< -o $@
+
+clean:
+	rm $(TARGET) *.o
