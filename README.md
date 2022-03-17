@@ -15,6 +15,13 @@
  
  info about the user, owner of file is got from struct "passwd" using func "getpwuid"
  
+ # Make:
+  Use "make ls" to compile programm
+  
+  Use "make clean" to delete all object object and executable files
+  
+  (for linux only)
+ 
 # Run:
  To run use "make ls" and "./ls dir -flag" 
 ##### (You can combine flags together)
