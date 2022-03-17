@@ -18,7 +18,7 @@
  # Make:
   Use "make ls" to compile programm
   
-  Use "make clean" to delete all object object and executable files
+  Use "make clean" to delete all object and executable files
   
   (for linux only)
  
